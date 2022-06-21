@@ -1,0 +1,101 @@
+.news-page {
+    .header {
+        position: sticky;
+        z-index: 10;
+        background: var(--white);
+        .nav__link {
+            color: var(--text);
+        }
+        .tabs__list {
+            color: var(--text);
+        }
+        .header__telephone {
+            color: var(--text);
+        }
+        .header__email {
+            color: var(--text);
+        }
+        .tabs__list-active {
+            color: var(--buttons);
+        }
+        .tabs__list:hover {
+            color: var(--buttons);
+        }
+    }
+    .news {
+        h1 {
+            margin-top: 70px;
+            font-size: 48px;
+            font-weight: 400;
+            font-family: 'Federo';
+            line-height: 120%;
+        }
+        &__wrapper {
+            margin-top: 40px;
+        }
+        &__title {
+            margin-top: 70px;
+            font-size: 36px;
+            color: var(--text);
+        }
+        &__text {
+            margin-top: 24px;
+            font-size: 18px;
+            color: var(--text2);
+            line-height: 160%;
+        }
+        &__video {
+            margin: 70px 0;
+            width: 100%;
+            &-block-content {
+                width: 100%;
+                height: 460px;
+                // aspect-ratio: 16/9;
+            }
+            &-block {
+                position: relative;
+            }
+            &-btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        &__list {
+            margin-top: 24px;
+            margin-bottom: 70px;
+            ul {
+                padding-left: 27px;
+                list-style-type: decimal;
+                display: flex;
+                flex-direction: column;
+                gap: 22px;
+            }
+            li {
+                list-style: decimal;
+                font-size: 18px;
+                color: var(--text2);
+                line-height: 160%;
+                span {
+                    font-weight: 500;
+                    color: var(--text);
+                }
+            }
+        }
+        &__divider {
+            width: 100%;
+            height: 1px;
+            background: var(--mainline);
+        }
+    }
+    .journal {
+        margin-top: 70px;
+        &__slider {
+            margin-top: 0;
+        }
+    }
+}

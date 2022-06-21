@@ -1,0 +1,373 @@
+@media only screen and (max-width: 1920px) {
+    
+}
+
+
+@media only screen and (max-width: 1600px) {
+
+}
+
+
+@media only screen and (max-width: 1340px) {
+    .contacts-page {
+        .header {
+            .hamburger {
+                width: 28px;
+                height: 11px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
+                position: relative;
+                z-index: 50;
+                cursor: pointer;
+                span {
+                    &:nth-child(1) {
+                        width: 28px;
+                        height: 1px;
+                        background: #000;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transition: all .3s;
+                    }
+                    &:nth-child(2) {
+                        display: block;
+                        width: 16px;
+                        height: 1px;
+                        background: #000;
+                        transition: all .3s;
+                    }
+                    &:nth-child(3) {
+                        width: 28px;
+                        height: 1px;
+                        background: #000;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        transition: all .3s;
+                    }
+                }
+                &.active {
+                    span {
+                        &:nth-child(1) {
+                            width: 28px;
+                            height: 1px;
+                            background: var(--text);
+                            position: absolute;
+                            top: 5px;
+                            left: 0;
+                            transform: rotate(-45deg);
+                        }
+                        &:nth-child(2) {
+                            display: block;
+                            width: 16px;
+                            height: 1px;
+                            background: #fff;
+                            opacity: 0;
+        
+                        }
+                        &:nth-child(3) {
+                            width: 28px;
+                            height: 1px;
+                            background: var(--text);
+                            position: absolute;
+                            bottom: 5px;
+                            left: 0;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+        .contacts {
+            padding: 70px 15px 0;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+
+@media only screen and (max-width: 992px) {
+    .contacts-page {
+        .contacts {
+            position: relative;
+            h1 {
+                font-size: 48px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .contacts-page {
+        .contacts {
+            padding-top: 50px;
+            position: relative;
+            &::before {
+                display: none;
+            }
+            &::after {
+               display: none;
+            }
+            h1 {
+                font-size: 38px;;
+            }
+            &__items {
+                margin-top: 50px;
+            }
+            &__first {
+                padding: 20px 0;
+                display: flex;
+                gap: 150px;
+                &-phone {
+                    width: 220px;
+                    &-title {
+                        font-size: 20px;
+                        color: var(--text);
+                    }
+                    &-number {
+                        display: block;
+                        margin-top: 10px;
+                        font-size: 20px;
+                        color: var(--buttons);
+                    }
+                }
+                &-email {
+                    width: 220px;
+                    &-title {
+                        font-size: 20px;
+                        color: var(--text);
+                    }
+                    &-link {
+                        display: block;
+                        margin-top: 10px;
+                        font-size: 20px;
+                        color: var(--buttons);
+                    }
+                }
+            }
+            &__second {
+                padding: 20px 0;
+                &-title {
+                    font-size: 28px;
+                    font-family: 'Federo';
+                }
+                &-item {
+                    margin-top: 30px;
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px 150px;
+                }
+                &-days {
+                    width: 220px;
+                    &-name {
+                        font-size: 20px;
+                        color: var(--text2);
+                    }
+                    &-time {
+                        margin-top: 10px;
+                        font-size: 20px;
+                        color: var(--buttons);
+                    }
+                }
+            }
+            &__third {
+                padding: 20px 0;
+                &-title {
+                    font-size: 28px;
+                    font-family: 'Federo';
+                }
+                &-address {
+                    margin-top: 30px;
+                    font-size: 20px;
+                    color: var(--buttons);
+                }
+                &-map {
+                    margin-bottom: 40px;
+                    width: 100%;
+                    height: 600px;
+                }
+            }
+        }
+    }   
+}
+
+
+@media only screen and(max-width: 640px) {
+    .contacts-page {
+        .contacts {
+            padding-top: 40px;
+            position: relative;
+            &::before {
+                display: none;
+            }
+            &::after {
+               display: none;
+            }
+            h1 {
+                font-size: 38px;
+            }
+            &__items {
+                margin-top: 40px;
+            }
+            &__first {
+                padding: 40px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                &-phone {
+                    width: 220px;
+                    &-title {
+                        font-size: 20px;
+                    }
+                    &-number {
+                        margin-top: 15px;
+                        font-size: 20px;
+                    }
+                }
+                &-email {
+                    width: 220px;
+                    &-title {
+                        font-size: 20px;
+                    }
+                    &-link {
+                        margin-top: 15px;
+                        font-size: 20px;
+                    }
+                }
+            }
+            &__second {
+                padding: 40px 0;
+                &-title {
+                    font-size: 28px;
+                }
+                &-item {
+                    margin-top: 30px;
+                    gap: 24px;
+                }
+                &-days {
+                    width: 220px;
+                    &-name {
+                        font-size: 20px;
+                    }
+                    &-time {
+                        margin-top: 15px;
+                        font-size: 20px;
+                    }
+                }
+            }
+            &__third {
+                padding: 40px 0;
+                &-title {
+                    font-size: 28px;
+                }
+                &-address {
+                    margin-top: 24px;
+                    font-size: 18px;
+                }
+                &-map {
+                    margin-bottom: 40px;
+                    width: 100%;
+                    height: 600px;
+                }
+            }
+        }
+    }  
+}
+
+
+@media only screen and (max-width: 480px) {
+    .contacts-page {
+        .contacts {
+            padding-top: 40px;
+            position: relative;
+            &::before {
+                display: none;
+            }
+            &::after {
+               display: none;
+            }
+            h1 {
+                font-size: 31px;
+            }
+            &__items {
+                margin-top: 40px;
+            }
+            &__first {
+                padding: 40px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                &-phone {
+                    width: 220px;
+                    &-title {
+                        font-size: 20px;
+                    }
+                    &-number {
+                        margin-top: 15px;
+                        font-size: 20px;
+                    }
+                }
+                &-email {
+                    width: 220px;
+                    &-title {
+                        font-size: 20px;
+                    }
+                    &-link {
+                        margin-top: 15px;
+                        font-size: 20px;
+                    }
+                }
+            }
+            &__second {
+                padding: 40px 0;
+                &-title {
+                    font-size: 28px;
+                }
+                &-item {
+                    margin-top: 30px;
+                    gap: 24px;
+                }
+                &-days {
+                    width: 220px;
+                    &-name {
+                        font-size: 20px;
+                    }
+                    &-time {
+                        margin-top: 15px;
+                        font-size: 20px;
+                    }
+                }
+            }
+            &__third {
+                padding: 40px 0;
+                &-title {
+                    font-size: 28px;
+                }
+                &-address {
+                    margin-top: 24px;
+                    font-size: 18px;
+                }
+                &-map {
+                    margin-bottom: 40px;
+                    width: 100%;
+                    height: 427px;
+                    .ymaps-2-1-79-map {
+                        width: 290px !important;
+                        height: 427px !important;
+                    }
+                }
+            }
+        }
+        .banner {
+            margin-top: 40px;
+        }
+    } 
+}

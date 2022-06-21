@@ -1,0 +1,93 @@
+.modal, .modal2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.6);
+    &__dialog {
+        max-width: 560px;
+        margin: 0 auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__content {
+        position: relative;
+        width: 100%;
+        padding: 40px 86px;
+        background: var(--bg2);
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    &__close {
+        position: absolute;
+        top: 34.5px;
+        right: 34.5px;
+        cursor: pointer;
+        z-index: 5;
+    }
+    &__title {
+        font-weight: 400;
+        text-align: center;
+        font-size: 48px;
+        color: var(--text);
+    }
+    &__subtitle {
+        padding-top: 24px;
+        font-size: 14px;
+        line-height: 160%;
+        color: var(--text2);
+        text-align: center;
+    }
+    &__form {
+        margin-top: 30px;
+        &-label {
+            display: block;
+            font-size: 14px;
+            line-height: 160%;
+            color: var(--titleforms);
+            margin-bottom: 10px;
+        }
+        &-input {
+            &-name {
+                width: 388px;
+                height: 50px;
+                border: 1px solid var(--forms);
+                background: transparent;
+                padding: 12px 15px;
+                font-size: 16px;
+                color: var(--text);
+                outline: none;
+                margin-bottom: 20px;
+            }
+            &-phone {
+                width: 388px;
+                height: 50px;
+                border: 1px solid var(--forms);
+                background: transparent;
+                padding: 12px 15px;
+                font-size: 16px;
+                color: var(--text);
+                outline: none;
+            }
+        }
+        &-btn {
+            display: block;
+            width: 230px;
+            height: 50px;
+            margin: 30px auto 0;
+        }
+    }
+}
+
+.show-modal {
+    display: block;
+}
+
+.hide-modal {
+    display: none;
+}

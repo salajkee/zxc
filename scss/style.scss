@@ -1,0 +1,45 @@
+@import 'reset';
+@import 'global';
+@import 'fonts';
+@import './blocks/home';
+@import './blocks/about';
+@import './blocks/faq';
+@import './blocks/journal';
+@import './blocks/news';
+@import './blocks/ip';
+@import './blocks/ot';
+@import './blocks/mindfulness';
+@import './blocks/school-support';
+@import './blocks/vip-services';
+@import './blocks/jana-habson';
+@import './blocks/contacts';
+@import './blocks/modal';
+
+:root {
+    --text: #1A1919;
+    --text2: #535353;
+    --text3: #2d2d2d;
+    --bg2: #F5F7F3;
+    --buttons: #989B86;
+    --buttonsline: #C3C3C3;
+    --linefooter: #616161;
+    --white: #FFF;
+    --headlinefooter: #8B8B8B;
+    --forms: #B3B3B3;
+    --bgfooter: #254741;
+    --mainline: #C8C8C8;
+    --titleforms: #989898;
+}
+
+@import './blocks/media-home';
+@import './blocks/media-about';
+@import './blocks/media-journal';
+@import './blocks/media-faq';
+@import './blocks/media-news';
+@import './blocks/media-ip';
+@import './blocks/media-ot';
+@import './blocks/media-mindfulness';
+@import './blocks/media-school-support';
+@import './blocks/media-vip-services';
+@import './blocks/media-jana-habson';
+@import './blocks/media-contacts';

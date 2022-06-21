@@ -1,0 +1,631 @@
+.intro {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    &__slider {
+        overflow: hidden;
+        position: relative;
+        .swiper-pagination {
+            top: 365px;
+            left: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 19px;
+            width: 11px;
+            height: 71px;
+            z-index: 5;
+            &-bullet {
+                width: 0;
+                height: 0;
+            }
+        }
+        .swiper-pagination-bullet-active .path {
+            display: inline-block !important;
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 0;
+            animation: dash linear 100s;
+            animation-iteration-count: unset;
+        }
+        .path {
+            display: none;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 1000;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    }
+    &__item {
+        width: 100%;
+        height: 100vh;
+        &-1 {
+            width: 100%;
+            height: 100vh;
+            background-position: center; 
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            background: url(../images/home/s1-bg.png);
+            h1 {
+                padding: 225px 0 25px;
+                width: 778px;
+                font-family: 'Federo';
+                font-weight: 400;
+                font-size: 68px;
+                line-height: 68px;
+                color: var(--white);
+                z-index: 5;
+            }
+        }
+        &-2 {
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            background: url(../images/home/s1-bg2.png);
+            h1 {
+                padding: 225px 0 25px;
+                width: 932px;
+                font-family: 'Federo';
+                font-weight: 400;
+                font-size: 68px;
+                line-height: 68px;
+                color: var(--white);
+                z-index: 5;
+            }
+        }
+        &-3 {
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            background: url(../images/home/s1-bg3.png);
+            h1 {
+                padding: 225px 0 25px;
+                width: 929px;
+                font-family: 'Federo';
+                font-weight: 400;
+                font-size: 68px;
+                line-height: 68px;
+                color: var(--white);
+                z-index: 5;
+            }
+        }
+    }
+    &__text {
+        width: 534px;
+        font-size: 16px;
+        line-height: 160%;
+        color: var(--white);
+        z-index: 5;
+        font-weight: 500;
+    }
+    &__btn {
+        width: 220px;
+        height: 50px;
+        font-weight: 500;
+        color: var(--white);
+        line-height: 160%;
+        margin-top: 35px;
+        box-sizing: border-box;
+    }
+    &__inner {
+        position: relative;
+    }
+    &__social {
+        z-index: 5;
+        position: absolute;
+        bottom: 40px;
+        display: flex;
+        gap: 15px;
+        left: 0;
+        &-link {
+            svg path {
+                transition: all .3s;
+            }
+            &:hover {
+                svg path {
+                    fill: var(--buttons);
+                }
+            }
+        }
+    }
+}
+
+.about {
+    position: relative;
+    &::after {
+        content: url(../images/flower-right-vector1.svg);
+        position: absolute;
+        top: 273px;
+        right: 0;
+    }
+    &__wrapper {
+        margin-top: 150px;
+    }
+    &__title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    &__inner {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    &__img {
+        width: 645px;
+    }
+    &__content-title {
+        font-size: 36px;
+        line-height: 46.8px;
+        font-family: 'Federo';
+        font-weight: 400;
+        color: var(--text);
+    }
+    &__content-text {
+        padding-top: 24px;
+        width: 489px;
+        font-size: 18px;
+        line-height: 28.8px;
+        color: var(--text2);
+    }
+    &__content-link {
+        margin-top: 32px;
+        line-height: 160%;
+        color: var(--text);
+    }
+}
+
+.quote {
+    position: relative;
+    &::after {
+        content: url(../images/flower-left-vector2.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__wrapper {
+        margin-top: 150px;
+        padding-top: 224px;
+        position: relative;
+        padding-bottom: 138px;
+    }
+    &__img {
+        position: absolute;
+        top: 50px;
+        left: 480px;
+    }
+    &__img-2 {
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+    }
+    &__img-3 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &__title {
+        margin: 60px auto 51px;
+        width: 903px;
+        text-align: center;
+        font-size: 38px;
+        line-height: 140%;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 5;
+        &::after {
+            content: '';
+            width: 166px;
+            height: 1px;
+            background: var(--buttons);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -25px;
+        }
+    }
+    &__author {
+        font-family: 'Federo';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: var(--buttons);
+        text-align: center;
+        position: relative;
+        z-index: 5;
+    }
+}
+
+.our-services {
+    position: relative;
+    &::after {
+        content: url(../images/flower-right-vector2.svg);
+        position: absolute;
+        bottom: -53px;
+        right: 0;
+    }
+    &__wrapper {
+        margin-top: 150px;
+    }
+    &__title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    &__items {
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 49px;
+    }
+    &__item {
+        width: 414px;
+        max-width: 414px;
+        height: 359px;
+        position: relative;
+        perspective: 1000px;
+        &:hover {
+            .our-services__item-front {
+                transform: rotateY(180deg);
+            }
+            .our-services__item-back {
+                transform: rotateY(360deg);
+            }
+        }
+        &-front, &-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+        &-front {
+            &-title {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 28px;
+                font-weight: 500;
+                color: var(--white);
+                text-align: center;
+                width: 258px;
+            }
+        }
+        &-front-inner, &-back-inner {
+            position: relative;
+        }
+        &-back {
+            background: #fff;
+            padding: 35px 30px;
+            transform: rotateY(180deg);
+            overflow: hidden;
+            box-shadow: 0px 6px 36px 5px rgba(0, 0, 0, 0.09);
+            &-title {
+                font-size: 24px;
+                color: var(--buttons);
+                text-align: center;
+                font-weight: 500;
+                position: relative;
+                z-index: 2;
+            }
+            &-text {
+                height: 155px;
+                padding-top: 51px;
+                color: var(--text);
+                line-height: 160%;
+                text-align: center;
+                position: relative;
+                z-index: 2;
+                overflow: hidden;
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background: #d4d4d4;
+                    position: absolute;
+                    top: 25px;
+                    left: 0;
+                }
+            }
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            &-link {
+                display: block;
+                width: 86px;
+                margin: 72px auto 0;
+                z-index: 2;
+                position: relative;
+                color: var(--text);
+                line-height: 160%;
+            }
+        }
+    }
+}
+
+.team {
+    overflow: hidden;
+    &__wrapper {
+        margin-top: 150px;
+        position: relative;
+        padding-bottom: 70px;
+    }
+    &__top {
+        display: flex;
+        gap: 123px;
+    }
+    &__title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 160%;
+        color: var(--text2);
+        width: 568px;
+        position: absolute;
+        right: -220px;
+    }
+    &__slider {
+        margin: 70px auto 0;
+        position: relative;
+        // overflow: hidden;
+        width: 1390px;
+    }
+    &__item {
+        width: 100%;
+        height: 100%;
+    }
+    &__slider-btns {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        z-index: 5;
+        .swiper-button-disabled {
+            svg {
+                path {
+                    fill: #B3B3B3;
+                }
+            }
+        }
+    }
+    &__next, &__prev {
+        cursor: pointer;
+    }
+    &__name {
+        font-size: 21px;
+        font-weight: 500;
+        color: var(--text);
+        padding-top: 20px;
+    }
+    &__profession {
+        padding-top: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--headlinefooter);
+    }
+}
+
+.journal {
+    margin-top: 150px;
+    &__title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    &__slider {
+        overflow: hidden;
+        position: relative;
+        margin-top: 55px;
+    }
+    &__item {
+        &-1 {
+            width: 645px !important;
+        }
+        &-2 {
+            width: 298px !important;
+        }
+        &-3 {
+            width: 298px !important;
+        }
+        &-date {
+            display: block;
+            font-weight: 500;
+            color: var(--headlinefooter);
+            margin-top: 20px;
+        }
+        &-title {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 145%;
+            color: var(--text);
+        }
+    }
+}
+
+.banner {
+    margin-top: 150px;
+    width: 100%;
+    background: url(../images/home/banner-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 70px 0;
+    height: 335px;
+    &__wrapper {
+        margin-left: 162px;
+    }
+    &__title {
+        width: 483px;
+        font-size: 48px;
+        line-height: 120%;
+        color: var(--white);
+    }
+    &__btn {
+        margin-top: 30px;
+        width: 216px;
+        font-weight: 500;
+        padding: 12px 46px;
+        cursor: pointer;
+        border: 1px solid var(--buttons);
+        &:hover {
+            background: var(--buttons);
+            border: 1px solid var(--buttons);
+        }
+    }
+}
+
+.signing {
+    margin-top: 150px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        background: var(--bg2);
+        padding: 70px;
+        position: relative;
+        &::before {
+            content: url(../images/signing-flower-2.svg);
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+        }
+        &::after {
+            content: url(../images/signing-flower-3.svg);
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+        }
+    }
+    &__left {
+        width: 460px;
+        position: relative;
+        &::after {
+            content: url(../images/signing-flower-1.svg);
+            position: absolute;
+            top: -70px;
+            right: -150px;
+        }
+    }
+    &__title {
+        font-size: 48px;
+        color: var(--text);
+    }
+    &__text {
+        padding-top: 25px;
+        font-size: 18px;
+        line-height: 160%;
+        color: var(--text2);
+    }
+    &__contacts {
+        margin-top: 220px;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        &-number {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--text2);
+        }
+        &-email {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--text2);
+        }
+    }
+    &__form {
+        position: relative;
+        z-index: 2;
+        &-label {
+            display: block;
+            font-size: 14px;
+            color: var(--titleforms);
+        }
+        &-input {
+            margin-top: 10px;
+            margin-bottom: 25px;
+            width: 388px;
+            height: 50px;
+            border: 1px solid var(--forms);
+            background: transparent;
+            padding: 12px 15px;
+            font-size: 16px;
+            color: var(--text);
+            outline: none;
+            display: block;
+        }
+        &-btn {
+            margin-top: 30px;
+            width: 150px;
+            height: 50px;
+            font-weight: 500;
+            line-height: 160%;
+        }
+        &-option {
+            display: none;
+        }
+        &-select-block {
+            position: relative;
+            cursor: pointer;
+        }
+        &-dropdown {
+            cursor: pointer;
+            margin-top: 5px;
+            width: 388px;
+            height: 156px;
+            border: 1px solid var(--forms);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            position: absolute;
+            background: var(--bg2);
+            overflow-y: scroll;
+        }
+        &-dropdown-arrow {
+            &.active {
+                transform: rotate(180deg);
+            }
+        }
+        &-dropdown-label {
+            font-size: 16px;
+            color: var(--text);
+            background: var(--bg2);
+            padding: 12px 15px;
+            cursor: pointer;
+            transition: all .3s;
+            &:hover {
+                background: var(--buttons);
+                color: var(--white);
+            }
+        }
+        &-dropdown-select {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 388px;
+            height: 50px;
+            margin-top: 10px;
+            width: 388px;
+            height: 50px;
+            background: transparent;
+            padding: 12px 15px;
+            font-size: 16px;
+            color: var(--text);
+            text-align: left;
+            border: 1px solid var(--forms);
+        }
+    }
+}

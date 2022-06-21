@@ -1,0 +1,156 @@
+.contacts-page {
+    .header {
+        position: sticky;
+        z-index: 10;
+        background: var(--white);
+        .nav__link {
+            color: var(--text);
+        }
+        .tabs__list {
+            color: var(--text);
+        }
+        .header__telephone {
+            color: var(--text);
+        }
+        .header__email {
+            color: var(--text);
+        }
+        .tabs__list-active {
+            color: var(--buttons);
+        }
+        .tabs__list:hover {
+            color: var(--buttons);
+        }
+    }
+    .contacts {
+        padding-top: 70px;
+        position: relative;
+        &::before {
+            content: url(../images/flower-left-vector1.svg);
+            position: absolute;
+            top: 158px;
+            left: 0;
+        }
+        &::after {
+            content: url(../images/flower-right-vector4.svg);
+            position: absolute;
+            top: 496px;
+            right: 0;
+        }
+        h1 {
+            font-family: 'Federo';
+            font-size: 71px;
+            font-weight: 400;
+            color: var(--text);
+        }
+        &__items {
+            margin-top: 70px;
+            &-divider {
+                width: 100%;
+                height: 1px;
+                background: var(--mainline);
+            }
+        }
+        &__first {
+            padding: 40px 0;
+            display: flex;
+            gap: 150px;
+            &-phone {
+                width: 250px;
+                &-title {
+                    font-size: 24px;
+                    color: var(--text);
+                }
+                &-number {
+                    display: block;
+                    margin-top: 15px;
+                    font-size: 24px;
+                    color: var(--buttons);
+                }
+            }
+            &-email {
+                width: 240px;
+                &-title {
+                    font-size: 24px;
+                    color: var(--text);
+                }
+                &-link {
+                    display: block;
+                    margin-top: 15px;
+                    font-size: 24px;
+                    color: var(--buttons);
+                }
+            }
+        }
+        &__second {
+            padding: 40px 0;
+            &-title {
+                font-size: 36px;
+                font-family: 'Federo';
+            }
+            &-item {
+                margin-top: 40px;
+                width: 645px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 40px 189px;
+            }
+            &-days {
+                &-name {
+                    font-size: 24px;
+                    color: var(--text2);
+                }
+                &-time {
+                    margin-top: 15px;
+                    font-size: 24px;
+                    color: var(--buttons);
+                }
+            }
+        }
+        &__third {
+            padding: 40px 0;
+            &-title {
+                font-size: 36px;
+                font-family: 'Federo';
+            }
+            &-address {
+                margin-top: 30px;
+                font-size: 24px;
+                color: var(--buttons);
+            }
+            &-map {
+                margin-bottom: 40px;
+                width: 100%;
+                height: 600px;
+                .balloon {
+                    &__name {
+                        font-size: 16px;
+                        color: var(--text);
+                    }
+                    &__info {
+                        font-size: 14px;
+                        text-decoration: underline;
+                    }
+                }
+                .ymaps-2-1-79-balloon {
+                    top: -140px;
+                    &__layout {
+                        width: 100%;
+                    }
+                }
+                .ymaps-2-1-79-balloon__close-button {
+                    width: 10px;
+                    height: 10px;
+                    margin-right: 5px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .banner {
+        margin-top: 70px;
+    }
+    .signing {
+        margin-top: 70px;
+    }
+}
